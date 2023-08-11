@@ -388,7 +388,11 @@
     <div class="main-header--utility wrapper desktop-only uppercase">
 
       <div class="breadcrumbs-left">
-        <p id="breadcrumbs"><span><span class="breadcrumb_last" aria-current="page">Home</span></span></p>
+        <p id="breadcrumbs">
+          <span>
+            <?php if ( function_exists( 'bcn_display' ) ) { bcn_display(); } ?>
+          </span>
+        </p>
       </div>
 
       <div class="utility-menu-right">
