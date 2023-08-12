@@ -89,19 +89,19 @@ add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 
 // -------------------------------------------------------- 投稿の「カテゴリー」と「タグ」の非表示
-function my_unregister_taxonomies() {
-  global $wp_taxonomies;
-  // 「タグ」の非表示
-  if (!empty($wp_taxonomies['post_tag']->object_type)) {
-    foreach ($wp_taxonomies['post_tag']->object_type as $i => $object_type) {
-      if ($object_type == 'post') {
-        unset($wp_taxonomies['post_tag']->object_type[$i]);
-      }
-    }
-  }
-  return true;
-}
-add_action('init', 'my_unregister_taxonomies');
+// function my_unregister_taxonomies() {
+//   global $wp_taxonomies;
+//   // 「タグ」の非表示
+//   if (!empty($wp_taxonomies['post_tag']->object_type)) {
+//     foreach ($wp_taxonomies['post_tag']->object_type as $i => $object_type) {
+//       if ($object_type == 'post') {
+//         unset($wp_taxonomies['post_tag']->object_type[$i]);
+//       }
+//     }
+//   }
+//   return true;
+// }
+// add_action('init', 'my_unregister_taxonomies');
 
 // -------------------------------------------------------- 自動pタグの出力を無効
 function wpautop_filter($content) {
