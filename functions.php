@@ -78,14 +78,14 @@ function my_document_title_separator($separator){
 }
 add_filter( 'document_title_separator','my_document_title_separator' );
 // -------------------------------------------------------- 投稿アーカイブのurl
-function post_has_archive( $args, $post_type ) {
-	if ( 'post' == $post_type ) {
-		$args['rewrite'] = true;
-		$args['has_archive'] = 'news';
-	}
-	return $args;
-}
-add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+// function post_has_archive( $args, $post_type ) {
+// 	if ( 'post' == $post_type ) {
+// 		$args['rewrite'] = true;
+// 		$args['has_archive'] = 'news';
+// 	}
+// 	return $args;
+// }
+// add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 
 // -------------------------------------------------------- 投稿の「カテゴリー」と「タグ」の非表示
