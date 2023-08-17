@@ -239,15 +239,14 @@
 
           <div class="slide bee3D--slide">
             <div class="bee3D--inner relative">
-              <picture class="slide--image--container"><img width="1024" height="768"
-                  data-src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg"
-                  class="lazy slide--image" alt="Topstep Do Good Crew" decoding="async" loading="lazy"
-                  data-srcset="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 1024w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 300w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 768w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg"                 sizes="(max-width: 1024px) 100vw, 1024px" /></picture>
+              <picture class="slide--image--container">
+                <img width="1024" height="768" data-src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg" class="lazy slide--image" alt="Topstep Do Good Crew" decoding="async" loading="lazy" data-srcset="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 1024w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 300w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg 768w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/IMG_7070-e1640205564682.jpg" sizes="(max-width: 1024px) 100vw, 1024px" />
+              </picture>
               <p class="slide--caption">Topstep gives back!</p>
             </div>
           </div>
 
-          <!-- <div class="slide bee3D--slide">
+          <div class="slide bee3D--slide">
             <div class="bee3D--inner relative">
               <picture class="slide--image--container"><img width="1024" height="768"
                   data-src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Copy-of-IMG_0875_web-1024x768.jpg"
@@ -323,7 +322,7 @@
           </div>
 
           <span class="bee3D--nav bee3D--nav__prev"></span>
-          <span class="bee3D--nav bee3D--nav__next"></span> -->
+          <span class="bee3D--nav bee3D--nav__next"></span>
 
         </div>
 
