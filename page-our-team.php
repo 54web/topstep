@@ -20,8 +20,7 @@
             <p>We believe that diverse people and ideas lead to better business. We also believe in lively debates,
               “yes, and,&#8221; self-starter attitudes, celebrating wins (and failures), taking PTO, and so much more.
               Say hello to Team Topstep!</p>
-            <a class='button button--normal button--normal  ' href="<?php echo esc_url(home_url()) ; ?>join-our-team/">Join The
-              Team</a>
+            <a class='button button--normal button--normal  ' href="<?php echo esc_url(home_url()) ; ?>/join-our-team/">Join The Team</a>
           </div>
         </div>
       </div>
