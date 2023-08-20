@@ -48,7 +48,7 @@
 <!-- ========== Ajax？ ========== -->
 <!-- <latest-news-search 
 :authors='[
-  {&quot;id&quot;:1,&quot;name&quot;:&quot;az-topstep&quot;},
+  {&quot;id&quot;:1,&quot;name&quot;:&quot;Abby DeRango&quot;},
   {&quot;id&quot;:2,&quot;name&quot;:&quot;John Doherty00&quot;},
   {&quot;id&quot;:18,&quot;name&quot;:&quot;Team Topstep&quot;}
   ]'
