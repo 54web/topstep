@@ -12,6 +12,7 @@
     <div class="row">
 
       <div class="col col-sm-6 col-xs-12">
+
         <div class="mobile-only featured-post--mobile-header">
           <div class="featured-post--meta uppercase flex align-center text-latest_news">
             <span>Press Release</span>
@@ -20,9 +21,10 @@
           </div>
           <h2>Topstep and Quantower Enter Into a Strategic Relationship</h2>
         </div>
+        
         <a class="featured-post--image" href="https://www.topstep.com/latest-news/topstep-and-quantower-enter-into-a-strategic-relationship/">
           <picture class="attachment-large--container size-large--container">
-            <img width="1024" height="724" data-src="https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-1024x724.png" class="lazy attachment-large size-large" alt="" decoding="async" loading="lazy" data-srcset="https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-1024x724.png 1024w, https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-300x212.png 300w, https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-768x543.png 768w, https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-1536x1086.png 1536w, https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-2048x1448.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />
+            <img width="1024" height="724" data-src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-1024x724.png" class="lazy attachment-large size-large" alt="" decoding="async" loading="lazy" data-srcset="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-1024x724.png 1024w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-300x212.png 300w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-768x543.png 768w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-1536x1086.png 1536w, <?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-2048x1448.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />
           </picture>
         </a>            
       </div>
@@ -43,17 +45,78 @@
   </div>
 </section>
 
-<!-- ========== プラグインで出力？ ========== -->
-<latest-news-search 
-:authors='[{&quot;id&quot;:40,&quot;name&quot;:&quot;Abby DeRango&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;John Doherty&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Team Topstep&quot;}]'
-:topics='[{&quot;term_id&quot;:682,&quot;name&quot;:&quot;Funding Opportunity&quot;,&quot;slug&quot;:&quot;funding-opportunity&quot;,&quot;term_group&quot;:0,&quot;term_taxonomy_id&quot;:682,&quot;taxonomy&quot;:&quot;latest_news_topics&quot;,&quot;description&quot;:&quot;&quot;,&quot;parent&quot;:0,&quot;count&quot;:1,&quot;filter&quot;:&quot;raw&quot;},{&quot;term_id&quot;:576,&quot;name&quot;:&quot;Press Release&quot;,&quot;slug&quot;:&quot;press-release&quot;,&quot;term_group&quot;:0,&quot;term_taxonomy_id&quot;:576,&quot;taxonomy&quot;:&quot;latest_news_topics&quot;,&quot;description&quot;:&quot;&quot;,&quot;parent&quot;:0,&quot;count&quot;:5,&quot;filter&quot;:&quot;raw&quot;},{&quot;term_id&quot;:680,&quot;name&quot;:&quot;Topstep&quot;,&quot;slug&quot;:&quot;topstep&quot;,&quot;term_group&quot;:0,&quot;term_taxonomy_id&quot;:680,&quot;taxonomy&quot;:&quot;latest_news_topics&quot;,&quot;description&quot;:&quot;&quot;,&quot;parent&quot;:0,&quot;count&quot;:1,&quot;filter&quot;:&quot;raw&quot;},{&quot;term_id&quot;:683,&quot;name&quot;:&quot;Trading Community&quot;,&quot;slug&quot;:&quot;trading-community&quot;,&quot;term_group&quot;:0,&quot;term_taxonomy_id&quot;:683,&quot;taxonomy&quot;:&quot;latest_news_topics&quot;,&quot;description&quot;:&quot;&quot;,&quot;parent&quot;:0,&quot;count&quot;:1,&quot;filter&quot;:&quot;raw&quot;},{&quot;term_id&quot;:681,&quot;name&quot;:&quot;TradingView&quot;,&quot;slug&quot;:&quot;tradingview&quot;,&quot;term_group&quot;:0,&quot;term_taxonomy_id&quot;:681,&quot;taxonomy&quot;:&quot;latest_news_topics&quot;,&quot;description&quot;:&quot;&quot;,&quot;parent&quot;:0,&quot;count&quot;:1,&quot;filter&quot;:&quot;raw&quot;}]'
+<!-- ========== Ajax？ ========== -->
+<!-- <latest-news-search 
+:authors='[
+  {&quot;id&quot;:1,&quot;name&quot;:&quot;az-topstep&quot;},
+  {&quot;id&quot;:2,&quot;name&quot;:&quot;John Doherty00&quot;},
+  {&quot;id&quot;:18,&quot;name&quot;:&quot;Team Topstep&quot;}
+  ]'
+:topics='[
+  {&quot;term_id&quot;:682,
+    &quot;name&quot;:&quot;Funding Opportunity&quot;,
+    &quot;slug&quot;:&quot;funding-opportunity&quot;,
+    &quot;term_group&quot;:0,
+    &quot;term_taxonomy_id&quot;:682,
+    &quot;taxonomy&quot;:&quot;latest_news_topics&quot;,
+    &quot;description&quot;:&quot;&quot;,
+    &quot;parent&quot;:0,
+    &quot;count&quot;:1,
+    &quot;filter&quot;:&quot;raw&quot;
+  },
+  {&quot;term_id&quot;:576,
+    &quot;name&quot;:&quot;Press Release&quot;,
+    &quot;slug&quot;:&quot;press-release&quot;,
+    &quot;term_group&quot;:0,
+    &quot;term_taxonomy_id&quot;:576,
+    &quot;taxonomy&quot;:&quot;latest_news_topics&quot;,
+    &quot;description&quot;:&quot;&quot;,
+    &quot;parent&quot;:0,
+    &quot;count&quot;:5,
+    &quot;filter&quot;:&quot;raw&quot;
+  },
+  {&quot;term_id&quot;:680,
+    &quot;name&quot;:&quot;Topstep&quot;,
+    &quot;slug&quot;:&quot;topstep&quot;,
+    &quot;term_group&quot;:0,
+    &quot;term_taxonomy_id&quot;:680,
+    &quot;taxonomy&quot;:&quot;latest_news_topics&quot;,
+    &quot;description&quot;:&quot;&quot;,
+    &quot;parent&quot;:0,
+    &quot;count&quot;:1,
+    &quot;filter&quot;:&quot;raw&quot;
+  },
+  {&quot;term_id&quot;:683,
+    &quot;name&quot;:&quot;Trading Community&quot;,
+    &quot;slug&quot;:&quot;trading-community&quot;,
+    &quot;term_group&quot;:0,
+    &quot;term_taxonomy_id&quot;:683,
+    &quot;taxonomy&quot;:&quot;latest_news_topics&quot;,
+    &quot;description&quot;:&quot;&quot;,
+    &quot;parent&quot;:0,
+    &quot;count&quot;:1,
+    &quot;filter&quot;:&quot;raw&quot;
+  },
+  {&quot;term_id&quot;:681,
+    &quot;name&quot;:&quot;TradingView&quot;,
+    &quot;slug&quot;:&quot;tradingview&quot;,
+    &quot;term_group&quot;:0,
+    &quot;term_taxonomy_id&quot;:681,
+    &quot;taxonomy&quot;:&quot;latest_news_topics&quot;,
+    &quot;description&quot;:&quot;&quot;,
+    &quot;parent&quot;:0,
+    &quot;count&quot;:1,
+    &quot;filter&quot;:&quot;raw&quot;
+  }
+  ]'
 :preset-topic='&quot;&quot;'
-:pagination="true" >
-</latest-news-search>
-<!-- ========== // プラグインで出力？ ========== -->
+:pagination="true"
+ >
+ </latest-news-search> -->
+<!-- ========== // Ajax？ ========== -->
 
 
-<!-- <section class="post-listing">
+<section class="post-listing">
   <div class="bg-white">
     <div class="post-listing--filters theme-light">
       <div class="wrapper">
@@ -96,7 +159,7 @@
       <div class="col col-sm-6 col-xs-12 col-md-3">
         <a href="https://www.topstep.com/latest-news/topstep-named-nabr-2023-best-and-brightest-in-wellness/" class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container">
-            <img src="https://www.topstep.com/wp-content/uploads/2020/12/Copy-of-we-trade-in-radical-honesty-2-1.png">
+            <img src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Copy-of-we-trade-in-radical-honesty-2-1.png">
           </div>
           <div class="thumbnail-post--meta">
             <div class="thumbnail-post--category uppercase text-undefined"></div>
@@ -113,7 +176,7 @@
           href="https://www.topstep.com/latest-news/topstep-and-quantower-enter-into-a-strategic-relationship/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2023/03/topstepquantower-1024x724.png">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/topstepquantower-1024x724.png">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -132,7 +195,7 @@
           href="https://www.topstep.com/latest-news/tradingview-users-can-now-get-funded-through-topstep/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2021/07/Topstep-and-TradingView-1024x768.png">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Topstep-and-TradingView-1024x768.png">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -151,7 +214,7 @@
           href="https://www.topstep.com/latest-news/digital-marketing-in-the-post-cookie-era/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2021/06/alexander-sinn-YYUM2sNvnvU-unsplash-1024x684.jpg">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/alexander-sinn-YYUM2sNvnvU-unsplash-1024x684.jpg">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -170,7 +233,7 @@
           href="https://www.topstep.com/latest-news/topstep-named-to-crains-2021-best-places-to-work-in-chicago-finalists/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2021/03/2021-best-places-logo-500px_chicago-1-1024x461.jpg">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/2021-best-places-logo-500px_chicago-1-1024x461.jpg">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -190,7 +253,7 @@
           href="https://www.topstep.com/latest-news/built-in-honors-topstep-in-its-esteemed-2021-best-places-to-work-awards/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2021/01/Built-In-Award-2021.png">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Built-In-Award-2021.png">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -210,7 +273,7 @@
           href="https://www.topstep.com/latest-news/topstep-brand-refresh-reflects-black-and-white-approach-to-trading/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2020/11/Topstep-default-post.jpg">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Topstep-default-post.jpg">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -229,7 +292,7 @@
           href="https://www.topstep.com/latest-news/topstep-is-named-one-of-the-top-100-finalists-for-the-15th-annual-chicago-innovation-awards/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2020/10/Screen-Shot-2020-12-01-at-2.36.13-PM-1024x742.png">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Screen-Shot-2020-12-01-at-2.36.13-PM-1024x742.png">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -249,7 +312,7 @@
           href="https://www.topstep.com/latest-news/topsteptrader-named-14-on-crains-best-places-to-work-in-chicago/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2020/11/TopstepTrader-Team.jpg">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/TopstepTrader-Team.jpg">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -268,7 +331,7 @@
           href="https://www.topstep.com/latest-news/barrons-topsteptrader-feature/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2020/10/Barrons-Cover-Feb-25.jpg">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/Barrons-Cover-Feb-25.jpg">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -287,7 +350,7 @@
           href="https://www.topstep.com/latest-news/michael-patak-ey-entrepreneur-of-the-year-2016-finalist/"
           class="thumbnail-post thumbnail-post--undefined">
           <div class="thumbnail-post--image-container"><img
-              src="https://www.topstep.com/wp-content/uploads/2020/12/MP.png">
+              src="<?php echo esc_url(home_url()) ; ?>/wp-content/uploads/2023/08/MP.png">
             
           </div>
           <div class="thumbnail-post--meta">
@@ -309,7 +372,7 @@
     <pagination page="1" maxpages="1"></pagination>
 
   </div>
-</section> -->
+</section>
 
 
 </div>   
